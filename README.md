@@ -23,7 +23,7 @@ python main.py
 
 UI local: http://127.0.0.1:8787
 
-## Docker (VPS) — porta 3090
+## Docker (VPS) — porta 4000
 
 ```bash
 cp .env.example .env
@@ -32,7 +32,7 @@ cp .env.example .env
 docker compose up -d --build
 ```
 
-Sobe em **http://SEU_IP:3090**
+Sobe em **http://SEU_IP:4000**
 
 Dados persistentes (volumes Docker):
 - `hackteus_data` → SQLite (`data/hackteus.db`)

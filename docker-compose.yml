@@ -4,12 +4,12 @@ services:
     image: hackteus:local
     container_name: hackteus
     ports:
-      - "3090:3090"
+      - "4000:4000"
     env_file:
       - .env
     environment:
       HOST: "0.0.0.0"
-      PORT: "3090"
+      PORT: "4000"
     volumes:
       - hackteus_data:/app/data
       - hackteus_runs:/app/runs
