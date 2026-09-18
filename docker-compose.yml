@@ -1,0 +1,20 @@
+services:
+  hackteus:
+    build: .
+    image: hackteus:local
+    container_name: hackteus
+    ports:
+      - "3090:3090"
+    env_file:
+      - .env
+    environment:
+      HOST: "0.0.0.0"
+      PORT: "3090"
+    volumes:
+      - hackteus_data:/app/data
+      - hackteus_runs:/app/runs
+    restart: unless-stopped
+
+volumes:
+  hackteus_data:
+  hackteus_runs:
